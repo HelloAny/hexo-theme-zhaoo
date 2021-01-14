@@ -30,15 +30,12 @@ function getCurrentGallery(galleries, pageTitle) {
 <main id="main">
   <section class="gallery container">
     <%- partial('_partial/components/header', {title: page.title, subtitle: currentGallery.description}) %>
-    <div id="wrap" class=<%= theme.galleries.type === 'waterfall' ? "waterfallWrap" : "wrap" %> default-type="<%= theme.galleries.type %>" default-col="<%= theme.galleries.columns %>">
+    <div id="wrap" class=<%= theme.galleries.type === 'waterfall' ? "waterFallWrap" : "wrap" %> default-type="<%= theme.galleries.type %>" default-col="<%= theme.galleries.columns %>">
       <%- images %>
     </div>
   </section>
 </main>
 
-<%
-
-%>
 <script type="text/javascript">
   var gap = 10;
   var items = document.getElementsByClassName('item')
